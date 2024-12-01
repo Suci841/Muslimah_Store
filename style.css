@@ -1,0 +1,252 @@
+/* Reset gaya */
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Gaya umum */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7e9ff; /* Ungu pastel lembut */
+    color: #5a4a69; /* Warna teks */
+}
+
+/* Cover */
+.cover {
+    position: relative;
+    background-image: url(WhatsApp\ Image\ 2024-12-01\ at\ 10.47.30.jpeg); /* Ganti dengan nama file cover Anda */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4); /* Overlay gelap */
+}
+
+.cover-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cover-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cover-content .btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #c3a6ff;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cover-content .btn:hover {
+    background-color: #7b688a;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #c3a6ff; /* Ungu pastel */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar h1 {
+    font-size: 1.5rem;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar li a:hover {
+    background-color: white;
+    color: #c3a6ff;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ede7f6;
+}
+.banner h2 {
+    color: #5a4a69;
+    font-size: 2rem;
+}
+.banner p {
+    margin-top: 1rem;
+    color: #7b688a;
+}
+
+/* Produk */
+#produk {
+    padding: 2rem;
+    text-align: center;
+}
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.produk-item {
+    background-color: white;
+    border: 2px solid #d1c4e9;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.produk-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.produk-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.produk-item h3 {
+    color: #5a4a69;
+}
+.produk-item p {
+    color: #7b688a;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.produk-item button {
+    background-color: #c3a6ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.produk-item button:hover {
+    background-color: #5a4a69;
+}
+
+/* Tabel */
+table {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+table thead tr {
+    background-color: #c3a6ff; /* Ungu pastel */
+    color: white;
+}
+table th, table td {
+    padding: 1rem;
+    border: 1px solid #e0d6f1;
+}
+table tbody tr:nth-child(even) {
+    background-color: #f3e5f5; /* Ungu muda */
+}
+table tbody tr:hover {
+    background-color: #ede7f6; /* Efek hover */
+}
+
+/* Tentang */
+#tentang {
+    background-color: #f3e5f5;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Formulir Kontak */
+form {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input, textarea, button {
+    padding: 0.8rem;
+    border: 1px solid #d1c4e9;
+    border-radius: 5px;
+    background-color: #f3e5f5;
+}
+button {
+    background-color: #c3a6ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #5a4a69;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #c3a6ff;
+    color: white;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
